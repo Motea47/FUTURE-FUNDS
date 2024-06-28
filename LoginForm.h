@@ -51,7 +51,9 @@ namespace FutureFunds {
 
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::Button^ button2;
-	
+	private: System::Windows::Forms::LinkLabel^ llSignUp;
+
+
 	private:
 		/// <summary>
 		/// Required designer variable.
@@ -74,6 +76,7 @@ namespace FutureFunds {
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->llSignUp = (gcnew System::Windows::Forms::LinkLabel());
 			this->SuspendLayout();
 			// 
 			// label1
@@ -87,14 +90,17 @@ namespace FutureFunds {
 			// 
 			// label2
 			// 
+			this->label2->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
 			this->label2->BackColor = System::Drawing::Color::Transparent;
 			this->label2->Font = (gcnew System::Drawing::Font(L"BankGothic Md BT", 79.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label2->ForeColor = System::Drawing::Color::SaddleBrown;
-			this->label2->Location = System::Drawing::Point(714, 328);
+			this->label2->Location = System::Drawing::Point(444, 201);
 			this->label2->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(703, 112);
+			this->label2->Size = System::Drawing::Size(750, 126);
 			this->label2->TabIndex = 1;
 			this->label2->Text = L"Login";
 			this->label2->TextAlign = System::Drawing::ContentAlignment::TopCenter;
@@ -102,12 +108,15 @@ namespace FutureFunds {
 			// 
 			// Username
 			// 
+			this->Username->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
 			this->Username->AutoSize = true;
 			this->Username->BackColor = System::Drawing::Color::Transparent;
 			this->Username->Font = (gcnew System::Drawing::Font(L"BankGothic Md BT", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Username->ForeColor = System::Drawing::Color::Sienna;
-			this->Username->Location = System::Drawing::Point(721, 507);
+			this->Username->Location = System::Drawing::Point(451, 380);
 			this->Username->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Username->Name = L"Username";
 			this->Username->Size = System::Drawing::Size(185, 31);
@@ -117,36 +126,45 @@ namespace FutureFunds {
 			// 
 			// tbEmail
 			// 
+			this->tbEmail->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
 			this->tbEmail->BackColor = System::Drawing::Color::LightGoldenrodYellow;
 			this->tbEmail->Font = (gcnew System::Drawing::Font(L"EuroRoman", 16.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(2)));
-			this->tbEmail->Location = System::Drawing::Point(910, 505);
+			this->tbEmail->Location = System::Drawing::Point(640, 378);
 			this->tbEmail->Margin = System::Windows::Forms::Padding(2);
 			this->tbEmail->Name = L"tbEmail";
-			this->tbEmail->Size = System::Drawing::Size(385, 36);
+			this->tbEmail->Size = System::Drawing::Size(432, 36);
 			this->tbEmail->TabIndex = 3;
 			this->tbEmail->TextChanged += gcnew System::EventHandler(this, &LoginForm1::tbEmail_TextChanged);
 			// 
 			// tbPassword
 			// 
+			this->tbPassword->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
 			this->tbPassword->BackColor = System::Drawing::Color::LightGoldenrodYellow;
 			this->tbPassword->Font = (gcnew System::Drawing::Font(L"EuroRoman", 16.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(2)));
-			this->tbPassword->Location = System::Drawing::Point(910, 570);
+			this->tbPassword->Location = System::Drawing::Point(640, 443);
 			this->tbPassword->Margin = System::Windows::Forms::Padding(2);
 			this->tbPassword->Name = L"tbPassword";
-			this->tbPassword->Size = System::Drawing::Size(385, 36);
+			this->tbPassword->Size = System::Drawing::Size(432, 36);
 			this->tbPassword->TabIndex = 4;
 			this->tbPassword->TextChanged += gcnew System::EventHandler(this, &LoginForm1::tbpassword_TextChanged);
 			// 
 			// label3
 			// 
+			this->label3->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
 			this->label3->AutoSize = true;
 			this->label3->BackColor = System::Drawing::Color::Transparent;
 			this->label3->Font = (gcnew System::Drawing::Font(L"BankGothic Md BT", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label3->ForeColor = System::Drawing::Color::Sienna;
-			this->label3->Location = System::Drawing::Point(721, 567);
+			this->label3->Location = System::Drawing::Point(451, 440);
 			this->label3->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(188, 31);
@@ -156,14 +174,17 @@ namespace FutureFunds {
 			// 
 			// button1
 			// 
+			this->button1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
 			this->button1->BackColor = System::Drawing::Color::LightGoldenrodYellow;
 			this->button1->Font = (gcnew System::Drawing::Font(L"BankGothic Md BT", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button1->ForeColor = System::Drawing::Color::SaddleBrown;
-			this->button1->Location = System::Drawing::Point(910, 620);
+			this->button1->Location = System::Drawing::Point(640, 493);
 			this->button1->Margin = System::Windows::Forms::Padding(2);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(178, 49);
+			this->button1->Size = System::Drawing::Size(225, 63);
 			this->button1->TabIndex = 8;
 			this->button1->Text = L"OK";
 			this->button1->UseVisualStyleBackColor = false;
@@ -171,25 +192,41 @@ namespace FutureFunds {
 			// 
 			// button2
 			// 
+			this->button2->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
 			this->button2->BackColor = System::Drawing::Color::LightGoldenrodYellow;
 			this->button2->Font = (gcnew System::Drawing::Font(L"BankGothic Md BT", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button2->ForeColor = System::Drawing::Color::SaddleBrown;
-			this->button2->Location = System::Drawing::Point(1102, 620);
+			this->button2->Location = System::Drawing::Point(832, 493);
 			this->button2->Margin = System::Windows::Forms::Padding(2);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(193, 49);
+			this->button2->Size = System::Drawing::Size(240, 63);
 			this->button2->TabIndex = 9;
 			this->button2->Text = L"Cancel";
 			this->button2->UseVisualStyleBackColor = false;
 			this->button2->Click += gcnew System::EventHandler(this, &LoginForm1::button2_Click);
+			// 
+			// llSignUp
+			// 
+			this->llSignUp->AutoSize = true;
+			this->llSignUp->Location = System::Drawing::Point(943, 570);
+			this->llSignUp->Name = L"llSignUp";
+			this->llSignUp->Size = System::Drawing::Size(114, 30);
+			this->llSignUp->TabIndex = 10;
+			this->llSignUp->TabStop = true;
+			this->llSignUp->Text = L"SIGN UP";
+			this->llSignUp->LinkClicked += gcnew System::Windows::Forms::LinkLabelLinkClickedEventHandler(this, &LoginForm1::linkLabel1_LinkClicked);
 			// 
 			// LoginForm1
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(15, 29);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::White;
-			this->ClientSize = System::Drawing::Size(1924, 1055);
+			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->ClientSize = System::Drawing::Size(1473, 721);
+			this->Controls->Add(this->llSignUp);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->label3);
@@ -198,6 +235,7 @@ namespace FutureFunds {
 			this->Controls->Add(this->Username);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label1);
+			this->DoubleBuffered = true;
 			this->Font = (gcnew System::Drawing::Font(L"EuroRoman", 16.2F, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(2)));
 			this->Margin = System::Windows::Forms::Padding(6, 5, 6, 5);
@@ -275,6 +313,11 @@ private: System::Void tbEmail_TextChanged(System::Object^ sender, System::EventA
 }
 
 private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+public:bool switchToSignUp = false;
+private: System::Void linkLabel1_LinkClicked(System::Object^ sender, System::Windows::Forms::LinkLabelLinkClickedEventArgs^ e) {
+	this->switchToSignUp = true; 
+	this->Close(); 
 }
 };
 }
